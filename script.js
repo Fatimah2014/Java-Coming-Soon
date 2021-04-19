@@ -32,7 +32,7 @@ function generate(){
 
    
    let randomPassword = "";
-   let charGroup = "[ABDCEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+=";
+   let charGroup = "[ABDCEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*?[]()_+=";
    
 
    for(var i = 0; i <=8; i++){
