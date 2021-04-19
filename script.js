@@ -1,8 +1,8 @@
 var buttonElement= document.getElementById("generate")
 var charGroup= []
-var lowerCaseChars = ["a", "b", "c"]
-var upperCaseChars = ["A", "B", "C"]
-var numberChars = ["1", "2", "3"]
+var lowerCaseChars = ["a", "b", "c", "d"]
+var upperCaseChars = ["A", "B", "C", "D"]
+var numberChars = ["1", "2", "3", "'"]
 var specialChars = ["#", "%", "$"]
 var userChoice
 
