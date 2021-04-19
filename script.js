@@ -1,50 +1,61 @@
+var buttonElement= document.getElementById("generate")
+var charGroup= []
+var lowerCaseChars = ["a", "b", "c"]
+var upperCaseChars = ["A", "B", "C"]
+var numberChars = ["1", "2", "3"]
+var specialChars = ["#", "%", "$"]
+var userChoice
 
-
-
-
-var userChoice = prompt("How many characters do you like your password to contain?");
-if (userChoice >= 8 && userChoice<= 128) {
-}else {
-alert ("Not a valid password");
+function startTheApp () {
+   userChoice = "";
+   charGroup =[];
+   // console.log("I exist and I am working!");
+   askQuestions();
+   document.getElementById("password").value = generate();
 }
 
+function askQuestions(){
 
-var lowercase = prompt('Do you want lowercase?');
-if (lowercase=true) {
-  
+   userChoice = prompt("How many characters do you like your password to contain?");
+   while (userChoice < 8 || userChoice > 128) {
+      userChoice = prompt("Not a valid password. Give me something between 8-128");
+   }
+   
+   
+   var lowercase = confirm('Do you want lowercase?');
+   if (lowercase ===  true) {
+      charGroup = charGroup.concat(lowerCaseChars)
+      
+   }
+   var uppercase = confirm('Do you want uppercase?');
+   if(uppercase === true){
+      charGroup = charGroup.concat(upperCaseChars)
+   }
+   
+   var numbers = confirm('Do you want numeric?');
+   if (numbers === true){
+      charGroup = charGroup.concat(numberChars)
+   }
+   var symbols = confirm('Do you want symbols');
+   if (symbols === true) {
+      charGroup = charGroup.concat(specialChars)
+   }
 
+   // console.log(charGroup)
 }
-var uppercase = prompt('Do you want uppercase?');
-if(uppercase= true){
-}
-
-var numbers = prompt('Do you want numeric?');
-if (numbers= true){
- }
- var symbols = prompt('Do you want symbols');
-if (symbols= true) {
-alert ('Valid Password')
-}
-
-
  
 function generate(){
 
-   
-   let randomPassword = "";
-   let charGroup = "[ABDCEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*?[]()_+=";
-   
-
-   for(var i = 0; i <=8; i++){
-      var char = Math.floor(Math.random() * charGroup.length + 1);
-      randomPassword+= charGroup.charAt(char)
+   let randomPassword = "";   
+   // console.log(userChoice)
+   for(var i = 0; i < userChoice; i++){
+      var charIndex = Math.floor(Math.random() * charGroup.length);
+      randomPassword += charGroup[charIndex]
    }
    return randomPassword;
    
 }
 
-document.getElementById("password").value = generate();
-
-
+buttonElement.addEventListener("click", startTheApp)
 
    
