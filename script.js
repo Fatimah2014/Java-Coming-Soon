@@ -31,19 +31,21 @@ alert ('Valid Password')
 function generate(){
 
    let content= document.getElementById('password').value;
+   let randomPassword = "";
+   let charGroup = "[ABDCEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+=";
    
-   let charGroup = "ABDCEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+=";
-   let randomPassword = ' '
 
-   for(var i = 0; i <=content; i++){
-      randomPassword = randomPassword + charGroup.charAt(Math.floor(Math.random() * Math.floor(content.length-1)));
-   
-   
+   for(var i = 0; i <=8; i++){
+      var char = Math.floor(Math.random() * charGroup.length + 1);
+      randomPassword+= charGroup.charAt(char)
    }
+   return randomPassword;
+   
+}
 
-document.getElementById("password").value = randomPassword;
-
-document.getElementById("password").innerHTML += randomPassword;
+document.getElementById("password").value = generate();
 
 
-   }
+
+
+   
