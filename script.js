@@ -1,82 +1,43 @@
-
-var upper= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var lower= "abcdefghijklmnopqrstuvwxyz";
-var numbers= "0123456789";
-var symbols= "!@#$%^&*";
-
-var password= [upper] + [lower] + [numbers]+ [symbols];
-
-var generatePassword = function () {
-var lengthAlert= window.prompt("How many characters do you like your password to contain?");
-if (lengthAlert <10 || lengthAlert >129 ); {
-alert("Length must be greater than 10 or less than 129 characters");
-}}
-
-
-var lowercase= window.prompt('Do you want lowercase?');
-if (lowercase == true) {
-return;
-else 
-   alert("Not a valid Password");
-
-}
-var uppercase= window.prompt('Do you want uppercase?');
-if  (uppercase= true) {
-  return;
+var length = prompt("How many characters do you like your password to contain?");
+if (length >= 8 && length<= 128) {
 }else {
-alert('Not a valid Password')
-}
-
-var numeric = window.prompt('Do you want numeric?');
-if  (numeric= true) {
-   return;
-}else {
- alert('Not a valid Password')
-};
-
- var symbols= window.prompt('Do you want symbols');
-if  (symbols= true) {
-   return;
-}else {
- alert('Not a valid Password')
-}
-
- var password= '';
-
-if (lowercase != true && lowercase != true && numeric != true && symbols != true){
-   alert("password not valid")
+alert ("Not a valid password");
 }
 
 
-
-const Password= document.getSelection ('password')
-
-
-var generateBtn = document.querySelector("#generate");
-function generatePassword ();
-
-function writePassword() {
-  var password = generatePassword();
-  if (password)
+let lowercase= prompt('Do you want lowercase?');
+if (lower=true) {
   
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;()
-  var generateBtn = document.querySelector("#generate");
-function generatePassword ();
 
 }
-let generatePassword= '';
+var uppercase= prompt('Do you want uppercase?');
+if(upper= true){
+}
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+var numeric = prompt('Do you want numeric?');
+if (numbers= true){
+ }
+ var signs= prompt('Do you want symbols');
+if (symbols= true) {
+alert ('Valid Password')
+}
 
-var password=generatePassword;
 
-function generatePassword(lowercase, uppercase, numeric, symbols) {
-    generatePassword = '';
-    for (var i = 0, n = length; i < length; i++) {
-pwd += getRandomCharacters.chartAt(Math.floor(Math.random()* getRandomCharacters.length))
+ 
+function generate(){
 
-    }
+   let content= document.getElementById('password').value;
+   
+   let charGroup = "ABDCEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+=";
+   
+   let randomPassword = "";
+   
+   for(var i = 0; i <= content; i++) {
+      randomPassword = randomPassword + charGroup.charAt(Math.floor(Math.random() * Math.floor(charGroup.content -1)));
+   }
+       
 
+document.getElementById("password").value = randomPassword;
+
+document.getElementById("length").innerHTML = "length:30";
+}
