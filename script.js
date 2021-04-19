@@ -30,7 +30,7 @@ alert ('Valid Password')
  
 function generate(){
 
-   let content= document.getElementById('password').value;
+   
    let randomPassword = "";
    let charGroup = "[ABDCEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+=";
    
@@ -44,7 +44,6 @@ function generate(){
 }
 
 document.getElementById("password").value = generate();
-
 
 
 
