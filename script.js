@@ -1,9 +1,9 @@
 var buttonElement= document.getElementById("generate")
 var charGroup= []
-var lowerCaseChars = ["a", "b", "c", "d"]
-var upperCaseChars = ["A", "B", "C", "D"]
-var numberChars = ["1", "2", "3", "'"]
-var specialChars = ["#", "%", "$"]
+var lowerCaseChars = [...Array(26).keys()].map(i => String.fromCharCode(i + 97));
+var upperCaseChars = [...Array(26).keys()].map(i => String.fromCharCode(i + 65));
+var numberChars = [...Array(10).keys()].map(i => String.fromCharCode(i + 48));
+var specialChars = [...Array(15).keys()].map(i => String.fromCharCode(i + 33));
 var userChoice
 
 function startTheApp () {
