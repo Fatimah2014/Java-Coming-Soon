@@ -1,9 +1,11 @@
 # Java-Coming-Soon
 
-Password word Grnerator.
+Password word Generator.
+1. allows the user to first click on the generate password button.
 
-1.allows the user to choose particular characters.
+2. allows the user to choose the length of the password. if the length is less than 8 and greater than 128 the computer will ask the user to choose a number within that range. 
 
-2.allows the user to click on generate password.
+3. allows  the user to choose a particular characters (uppercase, lowercase, numbers, and symbols)
 
-3.computer will set a password with the selcted characters.
+4. Computer will then generate a passowrd form the user choices.
+
