@@ -11,4 +11,5 @@ Password word Generator.
 # link to Application
 -Password Generator: https://fatimah2014.github.io/Password-Generator/
 
-![code-assess](https://user-images.githubusercontent.com/80806004/119921307-c1c7bb00-bf3b-11eb-8d14-09e61b9609bf.jpg)
+![IMG-6556](https://user-images.githubusercontent.com/80806004/119921460-06ebed00-bf3c-11eb-98b2-9ba3ff0b9c5f.jpg)
+
