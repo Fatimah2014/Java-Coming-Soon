@@ -8,5 +8,5 @@ Password word Generator.
 3. allows  the user to choose  particular characters (uppercase, lowercase, numbers, and symbols)
 
 4. Computer will then generate a passowrd from the user choice.
-
-url: 
+# link to Application
+-Password Generator: https://fatimah2014.github.io/Password-Generator/
