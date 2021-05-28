@@ -10,3 +10,5 @@ Password word Generator.
 4. Computer will then generate a passowrd from the user choice.
 # link to Application
 -Password Generator: https://fatimah2014.github.io/Password-Generator/
+
+![code-assess](https://user-images.githubusercontent.com/80806004/119921307-c1c7bb00-bf3b-11eb-8d14-09e61b9609bf.jpg)
